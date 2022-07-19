@@ -18,16 +18,16 @@ module "gke" {
 
 }
 
-module "cloudsql" {
-  source = "./modules/cloudsql"
-
-  region            = var.region
-  location          = var.location
-  instance_name     = var.instance_name
-  database_version  = var.database_version
-  instance_tier     = var.instance_tier
-  disk_space        = var.disk_space
-  database_name     = var.database_name
-  db_username       = var.db_username
-  db_password       = var.db_password
-}
+#module "cloudsql" {
+#.  source = "./modules/cloudsql"
+#
+#  region            = var.region
+#  location          = var.location
+#  instance_name     = var.instance_name
+#  database_version  = var.database_version
+#  instance_tier     = var.instance_tier
+#  disk_space        = var.disk_space
+#  database_name     = var.database_name
+#  db_username       = var.db_username
+#  db_password       = var.db_password
+#}
